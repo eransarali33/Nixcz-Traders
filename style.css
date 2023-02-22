@@ -1,0 +1,632 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  height: 12vh;
+  width: 100%;
+}
+nav {
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #c0785c;
+}
+header nav h2 {
+  font-family: cursive;
+  color: honeydew;
+}
+
+/* Home Page */
+.home {
+  background-image: url("images/logo-E.avif");
+  height: 88vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.home div {
+  margin-top: 4rem;
+  color: white;
+  font-size: x-large;
+}
+
+.p1 {
+  margin-left: 19%;
+}
+.btn {
+  width: 180px;
+  height: 40px;
+  margin-bottom: 6rem;
+  font-size: small;
+  border-radius: 7px;
+  background-color: rgb(152, 48, 10);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(164, 150, 150);
+  color: black;
+}
+
+.btn a {
+  font-size: medium;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+.heart {
+  color: red;
+}
+
+/* about */
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px 10px;
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+bold {
+  color: red;
+}
+
+.deals {
+  width: 90%;
+  margin: auto;
+}
+
+.deals h1 {
+  margin: 0 0 2rem 0;
+  color: #2874f0;
+}
+
+.deals h2 {
+  margin: 2rem 0 1rem 0;
+  color: rgb(167, 73, 39);
+}
+.items {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+.deals img {
+  width: 20vw;
+  height: 25vh;
+  margin-right: 1rem;
+}
+.hr {
+  margin: 25px 5vw;
+  width: 90vw;
+  background-color: red;
+}
+/* Contact */
+
+.contact1 h1 {
+  margin: 0;
+  padding: 2.5rem 0 0 4rem;
+  color: #2874f0;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+}
+
+.fb {
+  color: blue;
+  padding: 0 7px;
+}
+
+.insta {
+  color: rgb(203, 45, 45);
+  padding: 0 7px 0 14px;
+}
+
+.wtsApp {
+  color: rgb(70, 180, 20);
+  padding: 0 7px;
+}
+
+.email {
+  display: inline;
+  border-radius: 5px;
+  /* background-color: red; */
+  color: rgb(32, 91, 158);
+  padding: 0 7px;
+}
+
+.phone {
+  color: rgb(70, 180, 20);
+  padding: 0 7px 0 14px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+
+.follow {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+
+.address .location h2 {
+  padding: 2px 0 0 15px;
+}
+
+.address .location h4 {
+  padding: 2px 0 0 15px;
+}
+
+.address i {
+  color: rgb(194, 14, 14);
+}
+.address.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  padding-top: 16px;
+}
+
+.follow h2 {
+  padding-top: 16px;
+}
+
+section {
+  width: 80%;
+  margin: -4vh 0 0 10vw;
+  /* padding-top: 0; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: 70vh;
+  justify-content: space-between;
+}
+.map {
+  margin: 3vh 0;
+}
+
+.connect {
+  margin: 3vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-height: 280px) {
+  .home div {
+    margin-top: 2rem;
+  }
+  .btn {
+    margin-bottom: 4rem;
+  }
+}
+@media (390px <= height <= 393px) {
+  section {
+    margin-top: -32vh;
+  }
+}
+@media (height = 414px) {
+  section {
+    margin-top: -32vh;
+  }
+}
+@media (1024px <= height <= 1370px) {
+  section .connect {
+    margin-top: -12vh;
+  }
+  section {
+    margin-bottom: -20vh;
+    padding: 0;
+  }
+}
+
+@media (280px <= width <= 600px) {
+  header nav {
+    height: 10vh;
+  }
+
+  header a {
+    font-size: large;
+  }
+
+  header nav h2 {
+    font-size: x-large;
+  }
+
+  .deals img {
+    width: 45vw;
+    height: 25vh;
+    margin: 0.1rem;
+  }
+
+  .container {
+    margin: 20px auto 50px;
+    padding: 15px 7px;
+  }
+  .container h1 {
+    font-size: x-large;
+    margin-bottom: 0.7rem;
+    color: #2874f0;
+  }
+
+  section {
+    display: block;
+    overflow: hidden;
+  }
+  .map {
+    width: 40vw;
+    height: 20vh;
+    margin: auto 5%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact h2 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  .contact .icons i {
+    font-size: larger;
+  }
+
+  .follow {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .follow h2 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  .follow .icons i {
+    font-size: larger;
+  }
+
+  .address {
+    margin-top: 25px;
+  }
+  .address i {
+    font-size: xx-large;
+    margin-right: -8px;
+    margin-left: 5px;
+  }
+  .address h2 {
+    font-size: 0.9rem;
+  }
+  .address h4 {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    height: 5vh;
+  }
+  footer p {
+    font-size: small;
+    padding: 1.5px 0;
+  }
+}
+
+@media (max-width: 280px) {
+  header a {
+    font-size: medium;
+  }
+
+  header nav h2 {
+    font-size: medium;
+  }
+  .home div {
+    font-size: large;
+  }
+}
+
+@media (min-width: 650px) {
+  header nav {
+    height: 15vh;
+  }
+
+  header a {
+    font-size: x-large;
+  }
+
+  header nav h2 {
+    font-size: x-large;
+  }
+
+  .deals img {
+    width: 45vw;
+    height: 25vh;
+    margin: 0.1rem;
+  }
+
+  .container {
+    margin: 20px auto 50px;
+    padding: 15px 7px;
+  }
+  .container h1 {
+    font-size: x-large;
+    margin-bottom: 0.7rem;
+    color: #2874f0;
+  }
+
+  section {
+    display: inline-flex;
+    overflow: hidden;
+  }
+  .connect {
+    padding-left: 20px;
+  }
+  .map {
+    width: 40vw;
+    height: 50vh;
+    /* margin: auto 5%; */
+    padding-left: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact h2 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  .contact .icons i {
+    font-size: larger;
+  }
+
+  .follow {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .follow h2 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  .follow .icons i {
+    font-size: larger;
+  }
+
+  .address {
+    margin-top: 25px;
+  }
+  .address i {
+    font-size: xx-large;
+    margin-right: -8px;
+    margin-left: 5px;
+  }
+  .address h2 {
+    font-size: 0.9rem;
+  }
+  .address h4 {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+  footer p {
+    font-size: small;
+    padding: 1.5px 0;
+  }
+}
+
+@media (768px <= width <= 913px) {
+  header nav {
+    height: 10vh;
+  }
+  header nav a {
+    font-size: xx-large;
+  }
+  header nav h2 {
+    font-size: xx-large;
+  }
+
+  .container h1 {
+    font-size: xxx-large;
+  }
+  .container p {
+    font-size: x-large;
+  }
+  .deals h1 {
+    font-size: xxx-large;
+  }
+  .deals h2 {
+    font-size: xx-large;
+  }
+  .contact h2 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+  }
+  .contact .icons i {
+    font-size: xxx-large;
+  }
+  .connect {
+    margin-top: 11rem;
+  }
+  .follow {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .follow h2 {
+    font-size: x-large;
+    margin-bottom: 20px;
+  }
+  .follow .icons i {
+    font-size: xxx-large;
+  }
+
+  .address {
+    margin-top: 25px;
+  }
+  .address i {
+    font-size: xxx-large;
+    margin-right: -8px;
+    margin-left: 5px;
+  }
+  .address h2 {
+    font-size: 1.2rem;
+  }
+  .address h4 {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: 8vh;
+  }
+  footer p {
+    font-size: large;
+    padding: 1.5px 0;
+  }
+}
+
+@media (min-width: 1020px) {
+  header nav {
+    height: 15vh;
+  }
+
+  header a {
+    font-size: x-large;
+  }
+
+  header nav h2 {
+    font-size: x-large;
+  }
+
+  .deals img {
+    width: 45vw;
+    height: 25vh;
+    margin: 0.1rem;
+  }
+
+  .container {
+    margin: 20px auto 50px;
+    padding: 15px 7px;
+  }
+  .container h1 {
+    font-size: x-large;
+    margin-bottom: 0.7rem;
+    color: #2874f0;
+  }
+
+  section {
+    display: inline-flex;
+    overflow: hidden;
+  }
+  .connect {
+    padding-left: 20px;
+  }
+  .map {
+    width: 40vw;
+    height: 50vh;
+    /* margin: auto 5%; */
+    padding-left: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+  }
+  .contact .icons i {
+    font-size: xxx-large;
+  }
+
+  .follow {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .follow h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+  }
+  .follow .icons i {
+    font-size: xxx-large;
+  }
+
+  .address {
+    margin-top: 25px;
+  }
+  .address i {
+    font-size: xxx-large;
+    margin-right: -8px;
+    margin-left: 5px;
+  }
+  .address h2 {
+    font-size: 1.5rem;
+  }
+  .address h4 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 6vh;
+  }
+  footer p {
+    font-size: large;
+    padding: 1.5px 0;
+  }
+}
+
+/* -------------Scroll Button---------------- */
+
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e62739;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}

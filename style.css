@@ -122,6 +122,7 @@ bold {
   width: 20vw;
   height: 25vh;
   margin-right: 1rem;
+  border-radius: 6px;
 }
 .hr {
   margin: 25px 5vw;

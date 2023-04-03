@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nixcz Traders</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" href="images/logo-E.avif">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -44,13 +46,13 @@
     
 </div>
         
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h1>About Us</h1>
         <p> <bold>Nixcz Traders</bold> is focused on selling different electrical supplies (cable, cable channels, electric sockets etc) and electrical devices (electric meters, junction boxes, fuse boxes etc).The <i>Havels, GM, Anchor, Veney</i> are some good examples of the type of electronics that are sold at <bold>Nixcz Traders</bold> Store.</p>
     </div>
 
 
-    <div class="deals">
+    <div class="deals" data-aos="flip-up">
         <h1>Deals in:-</h1>
         <div> 
             <h2>Electrical Wires, LED Bulbs, Electrical Switches, etc</h2>
@@ -107,7 +109,7 @@
     </div>
     <hr class="hr">
 
-    <div class="deals">
+    <div class="deals" data-aos="flip-down">
         <h1>Service Providers:-</h1>
         <div> 
             <h2>Electrician, Plumbing, Installation, Repairing & Maintenance.</h2>
@@ -130,10 +132,10 @@
 
 
 <!-- Contact Section -->
-<div class="contact1">
+<div class="contact1" data-aos="flip-right">
     <h1>Contact</h1>
 </div>
-<section id="contact">
+<section id="contact" data-aos="flip-right">
     
     <div class="connect"> 
         <div class="address">
@@ -199,5 +201,13 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
 </body>
 </html>
